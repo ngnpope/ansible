@@ -360,7 +360,9 @@ VALID_PRIVS = frozenset(('SELECT', 'INSERT', 'UPDATE', 'DELETE', 'TRUNCATE',
                          'TEMPORARY', 'TEMP', 'EXECUTE', 'USAGE', 'ALL', 'USAGE'))
 VALID_DEFAULT_OBJS = {'TABLES': ('ALL', 'SELECT', 'INSERT', 'UPDATE', 'DELETE', 'TRUNCATE', 'REFERENCES', 'TRIGGER'),
                       'SEQUENCES': ('ALL', 'SELECT', 'UPDATE', 'USAGE'),
+                      'SCHEMAS': ('ALL', 'CREATE', 'USAGE'),
                       'FUNCTIONS': ('ALL', 'EXECUTE'),
+                      'ROUTINES': ('ALL', 'EXECUTE'),
                       'TYPES': ('ALL', 'USAGE')}
 
 
